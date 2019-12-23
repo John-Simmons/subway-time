@@ -1,0 +1,10 @@
+#This is the user configuration file, do not add or remove lines from this file.
+
+#Please add your API Key below to allow access to MTA's real-time feed
+API Key: 91176d7a2718a1a8ea9f0f0ebf547425
+
+#Please add the station you wish to monitor
+Station: Essex
+
+#Please enter the subway lines you wish to monitor
+Lines: JZ, BDFM

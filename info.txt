@@ -1,0 +1,20 @@
+api key: 91176d7a2718a1a8ea9f0f0ebf547425
+
+real-time data feed: http://datamine.mta.info/mta_esi.php?key=91176d7a2718a1a8ea9f0f0ebf547425
+
+BDFM Lines Feed: http://datamine.mta.info/mta_esi.php?key=<key>&feed_id=21
+
+JZ Lines Feed: http://datamine.mta.info/mta_esi.php?key=<key>&feed_id=36
+
+ACE Lines Feed: http://datamine.mta.info/mta_esi.php?key=<key>&feed_id=26
+
+123456 Lines Feed: http://datamine.mta.info/mta_esi.php?key=<key>&feed_id=1
+
+NQRW Line Feed: http://datamine.mta.info/mta_esi.php?key=<key>&feed_id=16
+
+
+requirements:
+- py -m pip install requests
+- py -m pip install --upgrade google-api-python-client
+- py -m pip install --upgrade gtfs-realtime-bindings
+- py -m pip install protobuf3_to_dict
