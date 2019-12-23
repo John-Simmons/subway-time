@@ -27,9 +27,14 @@ for line in lines:
     #update Trains object with feed from MTA
     trains.addTrains(arrivals);
 
+print(station);
+
 for train in trains.getTrains(6):
-    print(station + " " + train[1] + " " + train[2] + " " + str(train[3]) + " min");
+    if train[2] == 'N':
+        print(train[1] + " North " + str(train[3]) + " min");
+    elif train[2] == 'S':
+        print(train[1] + " South " + str(train[3]) + " min");
 
 ## TODO:
 ## - Create a looping process
-## - Figure out why we only get J and M trains
+## - Add stations for direction??

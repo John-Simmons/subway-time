@@ -7,4 +7,4 @@ API Key: 91176d7a2718a1a8ea9f0f0ebf547425
 Station: Essex
 
 #Please enter the subway lines you wish to monitor
-Lines: JZ, BDFM
+Lines: BDFM, JZ

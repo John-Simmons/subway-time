@@ -3,6 +3,7 @@ from google.transit import gtfs_realtime_pb2
 from google.protobuf import text_format
 from system_config.subway_info import SubwayInfo
 from protobuf_to_dict import protobuf_to_dict
+import src.nyct_subway_pb2 as nyct
 
 class MtaFeed(object):
     """MtaFeed is an object meant to handle pulling subway data from the MTA GTFS real-time api"""
@@ -66,6 +67,6 @@ class MtaFeed(object):
                             unique_time = time_data['time'];
 
                             if unique_time != None:
-                                upcoming_trains.append([unique_train_schedule['trip']['trip_id'],unique_train_schedule['trip']['route_id'], unique_time]);
+                                upcoming_trains.append([unique_train_schedule['trip']['trip_id'],unique_train_schedule['trip']['___X']['1001']['train_id'][1], unique_time]);
 
         return upcoming_trains;
